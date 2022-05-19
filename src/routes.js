@@ -10,8 +10,8 @@ const MyRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<Home/>} path="/" exact />
-        <Route component={<Sobre/>} path="/sobre" />
-        <Route component={<Usuario/>} path="/usuario" />
+        <Route element={<Sobre/>} path="/sobre" />
+        <Route element={<Usuario/>} path="/usuario" />
       </Routes>
     </BrowserRouter>
   );

@@ -1,5 +1,6 @@
 import "../App.css";
 
+import {Link} from 'react-router-dom'
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Container from "@mui/material/Container";
@@ -58,6 +59,8 @@ function Home() {
   return (
     <Container maxWidth="sm">
       <h2 className="AppTitle">Using ImageList component from Material UI</h2>
+      <Link to="/sobre">Sobre</Link>
+      <Link to="Usuario"> Usuario</Link>
       <div className="App">
         <ImageList sx={{ width: 500, height: 500 }} cols={3} rowHeight={164}>
           {itemData.map((item) => (
